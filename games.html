@@ -345,4 +345,15 @@ td {
         </table>
     </div>
 </body>
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+    // List of allowed referers
+    const allowedReferer = "https://paystack.com/pay/dhw6pnofv3";
+
+    // Check the document referrer
+    if (document.referrer.indexOf(allowedReferer) === -1) {
+        window.location.href = "pay.html"; // Redirect away if not allowed
+    }
+});
+    </script>
 </html>
