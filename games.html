@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Odds</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+  /* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: #111;
+    border-bottom: 1px solid #444;
+}
+
+.header .time {
+    font-size: 14px;
+}
+
+.status-bar span {
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+/* Matches Table */
+.matches {
+    padding: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.league-header {
+    background-color: #222;
+    color: #ddd;
+    font-weight: bold;
+    text-align: left;
+}
+
+.league-header td {
+    padding: 10px;
+    font-size: 16px;
+}
+
+tr {
+    border-bottom: 13px solid #333;
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    border-right: 1px solid #333;
+}
+
+.time {
+    color: #aaa;
+    text-align: left;
+}
+
+.teams {
+    text-align: left;
+    
+}
+
+.odds {
+    text-align: center;
+    color: #ccc;
+}
+
+.highlight {
+    background-color: #ffcc00;
+    color: #000;
+    padding: 2px px;
+    border-radius: 10px;
+    font-weight: bold;
+    
+}
+</style>
+<body>
+    <div class="matches">
+        <table>
+            
+            <tr>
+                <td class="time">Today</td>
+                <td class="teams">
+                    <span>Teams</span><br>
+                    
+                </td>
+                <td class="odd">Win</td>
+                
+                <td class="odd">Over</td>
+                <td class="odd">GG</td>
+                <td class="odd">DC</td>
+                <td class="odd">Home</td>
+                <td class="odd">Away</td>
+                <td class="odd">Corners</td>
+                
+                
+            </tr>
+            <tr>
+                <td class="time">29/01 21:00</td>
+                <td class="teams">
+                    <span>Aston Villa</span><br>
+                    <span>celtic</span>
+                </td>
+                <td class="odds">1</td>
+                <td class="odds">1.5</td>
+                <td class="odds">NO</td>
+                <td class="odds">1X</td>
+                <td class="odds">Ov1.5</td>
+                <td class="odds">Un1.5</td>
+                <td class="odds">Ov7.5</td>
+            </tr>
+
+            <!-- Spain - La Liga -->
+         
+            <tr>
+                <td class="time">27/01 21:00</td>
+                <td class="teams">
+                    <span>Barcelona</span><br>
+                    <span>Atlanta</span>
+                </td>
+                
+                <td class="odds">1</td>
+                <td class="odds">Ov3.5</td>
+<td class="odds">Yes</td>
+<td class="odds">1X</td>
+<td class="odds">Ov2.5</td>
+<td class="odds">Un1.5</td>
+<td class="odds">Ov8.5</td>
+            </tr>
+
+            <tr>
+                <td class="time">27
+                9/01 21:00</td>
+                <td class="teams">
+                    <span>Bayern</span><br>
+                    <span>Slovern</span>
+                </td>
+                
+                
+                <td class="odds">1</td>
+                <td class="odds">2.5</td>
+<td class="odds">Yes</td>
+<td class="odds">12</td>
+<td class="odds">Ov2.5</td>
+<td class="odds">Ov0.5</td>
+<td class="odds">Un11.5</td>
+            </tr>
+
+            <tr>
+                <td class="time">29/01 21:00</td>
+                <td class="teams">
+                    <span>Borussia D</span><br>
+                    <span>Shakhtar D</span>
+                </td>
+                <td class="odds">1</td>
+                
+                <td class="odds">1.5</td>
+<td class="odds">No</td>
+<td class="odds">1X</td>
+<td class="odds">Ov1.5</td>
+<td class="odds">Ov0.5</td>
+<td class="odds">Un12.5</td>
+            </tr>
+            
+            <tr>
+                <td class="time">29/01 21:00</td>
+                <td class="teams">
+                    <span>Brest</span><br>
+                    <span>Real Madrid</span>
+                </td>
+                <td class="odds">2</td>
+                
+                <td class="odds">3.5</td>
+<td class="odds">Yes</td>
+<td class="odds">1X</td>
+<td class="odds">Ov1.5</td>
+<td class="odds">Un2.5</td>
+<td class="odds">Ov8.5</td>
+            </tr>
+            
+            </tr>
+            <tr>
+                <td class="time">29/01 21:00</td>
+                <td class="teams">
+                    <span>Girona Fc</span><br>
+                    <span>Arsenal</span>
+                </td>
+                
+                <td class="odds">2</td>
+                <td class="odds">2.5</td>
+<td class="odds">No</td>
+<td class="odds">12</td>
+<td class="odds">Ov0.5</td>
+<td class="odds">Ov1.5</td>
+<td class="odds">Un13.5</td>
+            </tr>
+            </tr>
+            <tr>
+                <td class="time">29/01 21:00</td>
+                <td class="teams">
+                    <span>Man city</span><br>
+                    <span>Brugge</span>
+                </td>
+                <td class="odds">1</td>
+                
+                <td class="odds">2.5</td>
+<td class="odds">No</td>
+<td class="odds">1X</td>
+<td class="odds">Ov1.5</td>
+<td class="odds">Un1.5</td>
+<td class="odds">Ov8.5</td>
+            </tr>
+
+           
+            <tr>
+                <td class="time">29/01 21:00</td>
+                <td class="teams">
+                    <span>Psv</span><br>
+                    <span>Liverpool</span>
+                </td>
+                <td class="odds">2</td>
+                
+                <td class="odds">Over</td>
+<td class="odds">Yes</td>
+<td class="odds">12</td>
+<td class="odds">Ov0.5</td>
+<td class="odds">Un2.5</td>
+<td class="odds">Ov11.5</td>
+            </tr>
+
+
+            <tr>
+                <td class="time">29/01 21:00</td>
+                <td class="teams">
+                    <span>PSG</span><br>
+                    <span>Stuttgart</span>
+                </td>
+                <td class="odds">1</td>
+                
+                <td class="odds">Over</td>
+<td class="odds">No</td>
+<td class="odds">1X</td>
+<td class="odds">Ov1.5</td>
+<td class="odds">Un1.5</td>
+<td class="odds">Un13.5</td>
+            </tr>
+
+            
+            <tr>
+                <td class="time">29/01 21:00</td>
+                <td class="teams">
+                    <span>Storm</span><br>
+                    <span>Leipzig</span>
+                </td>
+                <td class="odds">2</td>
+                
+                <td class="odds">1.5</td>
+<td class="odds">No</td>
+<td class="odds">12</td>
+<td class="odds">Ov0.5</td>
+<td class="odds">Un1.5</td>
+<td class="odds">Ov9.5</td>
+            </tr>
+            
+            <tr>
+                <td class="time">29/01 21:00</td>
+                <td class="teams">
+                    <span>Sporting</span><br>
+                    <span>Balogna</span>
+                </td>
+                <td class="odds">1</td>
+                
+                <td class="odds">1.5</td>
+<td class="odds">GG</td>
+<td class="odds">1X</td>
+<td class="odds">Ov1.5</td>
+<td class="odds">Un2.5</td>
+<td class="odds">Ov8.5</td>
+            </tr>
+            
+            <tr>
+                <td class="time">29/01 21:00</td>
+                <td class="teams">
+                    <span>Inter</span><br>
+                    <span>Monaco</span>
+                </td>
+                <td class="odds">1</td>
+               
+                <td class="odds">1.5</td>
+<td class="odds">Yes</td>
+<td class="odds">12</td>
+<td class="odds">Ov1.5""</td>
+<td class="odds">Ov0.5</td>
+<td class="odds">Un12.5</td>
+            </tr>
+            
+            <tr>
+                <td class="time">29/01 21:00</td>
+                <td class="teams">
+                    <span>Benfica</span><br>
+                    <span>Juventus</span>
+                </td>
+                <td class="odds">2</td>
+                
+                <td class="odds">1.5</td>
+<td class="odds">Yes</td>
+<td class="odds">12</td>
+<td class="odds">Un2.5</td>
+<td class="odds">Un2.5</td>
+<td class="odds">Ov7.5</td>
+            </tr>
+            
+            <tr>
+                <td class="time">29/01 21:00</td>
+                <td class="teams">
+                    <span>Sparta Prague</span><br>
+                    <span>Leverkusen</span>
+                </td>
+                <td class="odds">2</td>
+                
+                <td class="odds">Over</td>
+<td class="odds">Yes</td>
+<td class="odds">12</td>
+<td class="odds">Ov0.5</td>
+<td class="odds">Ov1.5</td>
+<td class="odds">Ov9.5</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
